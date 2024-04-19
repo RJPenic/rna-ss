@@ -8,7 +8,7 @@ Download the _BPSeq_ files provided on the _bpRNA-1m_ website and unzip the down
 ## BPSeq File Format
 Let's check what's inside of the _BPSeq_ files we just downloaded. Open one of the files in the preferred text editors.
 
-_BPSeq_ format is one of the most popular ways to "encode" the secondary structure where every row represents pairing status of a specific nucleotide in the RNA.
+_BPSeq_ format is one of the most popular ways to "encode" the secondary structure where every row describes the pairing status of a specific nucleotide in the RNA.
 The structural information in the _BPSeq_ format is denoted in three columns:
 - The first column contains the sequence position, starting at one.
 - The second column contains the base in one-letter notation.
