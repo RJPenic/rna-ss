@@ -66,6 +66,20 @@ draw --help
 ```
 
 ## Exploratory Data Analysis
+Finally, let's see what's exactly in the dataset we downloaded. Create a Jupyter notebook and implement a simple _Python_ method for _BPSeq_ file parsing.
+
+Once you can parse secodary structure files, answer the following questions:
+- What is the distribution of RNA sequence lengths?
+- Are there any duplicate RNAs (RNAs with the same nucleotide sequence)?
+  - If yes, how many and do they have the same secondary structure?
+- What is the distribution of nucleic bases?
+  - Do any "non-standard" nucleotide base letters appear (outside of A, C, U and G)?
+- What is the distribution of base pairings?
+  - Which nucleic bases pair up most often/rarely?
+- What is the average percentage of unpaired nucleotides per RNA?
+- Are there any structures without any pairings?
+
+Feel free to explore other aspects of the dataset that are not mentioned here and we highly recommend you provide informative chart visualizations whenever possible.
 
 ## Additional information
 - https://bprna.cgrb.oregonstate.edu/
