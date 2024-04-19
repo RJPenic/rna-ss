@@ -43,7 +43,7 @@ Another popular way to represent the secondary structure is dot bracket notation
   - Other "bracket"-type symbols can be used to represent basepairs, thereby allowing pseudo-knots to be encoded.
   - Example: `<(.>)` = First nucleotide is paired with the fourth one, second one is paired with the last one and third one is unpaired.
  
-Implement a python script which will convert given '_.bpseq_' file into '_.dbn_' format (usage example: `python convert input.bpseq output.dbn`).
+Implement a python script which will convert given '_.bpseq_' file into '_.dbn_' format (usage example: `python bpseq_to_dbn.py input.bpseq output.dbn`).
 
 Dot Bracket file example:
 ```
