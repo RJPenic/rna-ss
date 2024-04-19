@@ -79,7 +79,7 @@ Once you can parse secodary structure files, answer the following questions:
 - What is the average percentage of unpaired nucleotides per RNA?
 - Are there any structures without any pairings?
 
-Feel free to explore other aspects of the dataset that are not mentioned here and we highly recommend you provide informative chart visualizations whenever possible.
+Feel free to explore other aspects of the dataset that are not mentioned here and we highly recommend you provide informative charts (e.g. bar chart, box plot, ...) whenever possible.
 
 ## Additional information
 - https://bprna.cgrb.oregonstate.edu/
