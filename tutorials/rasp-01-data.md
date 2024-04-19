@@ -53,10 +53,22 @@ GAUGGCACUCCCAUCAAUUGGAGC
 ```
 
 ## Secondary Structure Visualization
+Previously described file format can come in handy when we want to save secondary structures but it is hard to draw any conclusion from them. How many loops are there in the structure? Are there any bulges? To answer these questions we need to visualize the structure with one of many available visualization tools. In this tutorial, we are going to use _RNAstructure_'s _draw_ utility tool. You can install _RNAstructure_ (and its utility tools) with the following command:
+```
+conda install bioconda::rnastructure
+```
+
+Choose one of the _BPSeq_ files we initially downloaded, convert it into the dot-bracket file and create a '_.svg_' file with secondary structure visualization using the _draw_ tool. Open the generated '_.svg_' file in one of the image viewer programs and check how the structure looks like.
+
+If you are unsure how to use _RNAStructure_'s _draw_, use the _--help_ option:
+```
+draw --help
+```
 
 ## Exploratory Data Analysis
 
-## Sources
+## Additional information
 - https://bprna.cgrb.oregonstate.edu/
 - https://www.ibi.vu.nl/programs/k2nwww/static/data_formats.html
 - https://rna.urmc.rochester.edu/Text/File_Formats.html
+- https://rna.urmc.rochester.edu/Text/draw.html
