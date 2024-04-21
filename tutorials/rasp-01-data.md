@@ -68,7 +68,7 @@ draw --help
 ## Exploratory Data Analysis
 Finally, let's see what's exactly in the dataset we downloaded. Create a Jupyter notebook and implement a simple _Python_ method for _BPSeq_ file parsing.
 
-Once you can parse secodary structure files, answer the following questions:
+Once you can parse secondary structure files, answer the following questions:
 - What is the distribution of RNA sequence lengths?
 - Are there any duplicate RNAs (RNAs with the same nucleotide sequence)?
   - If yes, how many and do they have the same secondary structure?
