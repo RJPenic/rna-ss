@@ -65,6 +65,11 @@ If you are unsure how to use _RNAStructure_'s _draw_, use the _--help_ option:
 draw --help
 ```
 
+Example of a tRNA secondary structure:
+<p align="center">
+ <img src="../imgs/trna_visualized.png" width="500">
+</p>
+
 ## Exploratory Data Analysis
 Finally, let's see what's exactly in the dataset we downloaded. Create a Jupyter notebook and implement a simple _Python_ method for _BPSeq_ file parsing.
 
