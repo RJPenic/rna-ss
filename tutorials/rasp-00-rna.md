@@ -20,9 +20,13 @@ ACUUGCCACCGCUUCCUAAC
 RNA secondary structure refers to the local folding patterns and interactions that occur within a single-stranded RNA molecule. It describes how regions of the RNA molecule fold upon themselves and form various stable structural motifs, such as hairpins, stems, loops, and bulges.
 
 Secondary structure structural motifs:
-- One of the most common and fundamental structural motifs in RNA secondary structure is the stem-loop or hairpin structure. It consists of a stem, formed by base pairs, and a loop, which is a non-base-paired region. The stem can be short, consisting of just a few base pairs, or long, with multiple base pairs. Hairpin structures can occur within a single RNA molecule or between two separate RNA molecules.
-- Internal loops occur when there is an unpaired region within the stem of a hairpin structure.
-- Bulges are similar to internal loops but involve an unpaired nucleotide that disrupts the regular base pairing.
-- Junctions are branching points where multiple helices meet, forming a three-dimensional network of interactions.
-- Pseudoknots are structural motifs in which a single-stranded region of RNA pairs with a region outside its immediate vicinity, leading to the formation of intricate secondary structures.
+- One of the most common and fundamental structural motifs in RNA secondary structure is the **stem-loop** or **hairpin structure**. It consists of a stem, formed by base pairs, and a loop, which is a non-base-paired region. The stem can be short, consisting of just a few base pairs, or long, with multiple base pairs. Hairpin structures can occur within a single RNA molecule or between two separate RNA molecules.
+- **Internal loops** occur when there is an unpaired region within the stem of a hairpin structure.
+- **Bulges** are similar to internal loops but involve an unpaired nucleotide that disrupts the regular base pairing.
+- **Junctions** are branching points where multiple helices meet, forming a three-dimensional network of interactions.
+- **Pseudoknots** are structural motifs in which a single-stranded region of RNA pairs with a region outside its immediate vicinity, leading to the formation of intricate secondary structures.
+
+<p align="center">
+ <img src="../imgs/ss_struct_motifs.png" width="700">
+</p>
 
