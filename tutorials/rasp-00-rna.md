@@ -25,6 +25,10 @@ When RNA folds, many of its nucleotides pair up with each other and form hydroge
 
 RNA secondary structure refers to the local folding patterns and interactions that occur within a single-stranded RNA molecule. It describes how regions of the RNA molecule fold upon themselves and form various stable structural motifs, such as hairpins, stems, loops, and bulges.
 
+<p align="center">
+ <img src="../imgs/ss_example.png" width="500">
+</p>
+
 Secondary structure structural motifs:
 - One of the most common and fundamental structural motifs in RNA secondary structure is the **stem-loop** or **hairpin structure**. It consists of a stem, formed by base pairs, and a loop, which is a non-base-paired region. The stem can be short, consisting of just a few base pairs, or long, with multiple base pairs. Hairpin structures can occur within a single RNA molecule or between two separate RNA molecules.
 - **Internal loops** occur when there is an unpaired region within the stem of a hairpin structure.
@@ -44,5 +48,5 @@ RNA tertiary structure is crucial for its biological function and can significan
 Determining RNA tertiary structure is a complex task that often relies on experimental techniques such as X-ray crystallography, nuclear magnetic resonance (NMR) spectroscopy, cryo-electron microscopy, and computational modeling methods. Understanding RNA tertiary structure is crucial for unraveling the mechanisms underlying RNA function, design of RNA-based therapies, and the development of new drugs targeting RNA molecules.
 
 <p align="center">
- <img src="../imgs/rna_struct_repr.png" width="500">
+ <img src="../imgs/rna_struct_repr.png" width="700">
 </p>
