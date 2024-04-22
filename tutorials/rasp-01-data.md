@@ -38,8 +38,9 @@ Another popular way to represent the secondary structure is dot bracket notation
 - The first line is a title and starts with a ">" character.
 - The second line contains the sequence.
 - The third line contains structure information in dot-bracket notation.
+  - Each character represents a nucleotide. 
   - The dot/period "." represents an unpaired nucleotide.
-  - An open-parenthesis "(" represents the 5'-nucleotide in a pair, and the matching closing parenthesis ")" represents the 3'-nucleotide in the pair.
+  - Pairings are denoted by matching pairs of parenthesis.
   - Other "bracket"-type symbols can be used to represent basepairs, thereby allowing pseudo-knots to be encoded.
   - Example: `<(.>)` = First nucleotide is paired with the fourth one, second one is paired with the last one and third one is unpaired.
  
