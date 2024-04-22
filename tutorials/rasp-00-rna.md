@@ -21,6 +21,8 @@ ACUUGCCACCGCUUCCUAAC
 ```
 
 ## Secondary Structure
+When RNA folds, many of its nucleotides pair up with each other and form hydrogen bonds. These pairings are crucial for structure's stability and are best described with the secondary structure.
+
 RNA secondary structure refers to the local folding patterns and interactions that occur within a single-stranded RNA molecule. It describes how regions of the RNA molecule fold upon themselves and form various stable structural motifs, such as hairpins, stems, loops, and bulges.
 
 Secondary structure structural motifs:
