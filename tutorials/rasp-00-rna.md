@@ -8,6 +8,10 @@ Each nucleotide consists of three components: sugar, phosphate group and nitroge
 ## RNA Folding
 RNA folding refers to the process by which a linear RNA molecule adopts a specific three-dimensional conformation or structure. During RNA folding, the molecule undergoes a series of conformational changes, driven by various interactions, to achieve its stable and functional folded state. The folded structure of RNA is crucial for its biological function, as it determines its interactions with other molecules and its ability to carry out specific cellular processes.
 
+<p align="center">
+ <img src="../imgs/trna_function_example.png" width="400">
+</p>
+
 ## Primary Structure (RNA Sequence)
 The primary structure of RNA refers to its linear sequence of nucleotides.
 
