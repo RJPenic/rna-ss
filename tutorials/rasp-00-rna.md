@@ -30,3 +30,9 @@ Secondary structure structural motifs:
  <img src="../imgs/ss_struct_motifs.png" width="700">
 </p>
 
+## Tertiary structure
+RNA tertiary structure refers to the three-dimensional arrangement and folding of an RNA molecule. It is the spatial arrangement of atoms, bases or structural motifs. 
+
+RNA tertiary structure is crucial for its biological function and can significantly impact its stability, activity, and interactions with other molecules.
+
+Determining RNA tertiary structure is a complex task that often relies on experimental techniques such as X-ray crystallography, nuclear magnetic resonance (NMR) spectroscopy, cryo-electron microscopy, and computational modeling methods. Understanding RNA tertiary structure is crucial for unraveling the mechanisms underlying RNA function, design of RNA-based therapies, and the development of new drugs targeting RNA molecules.
