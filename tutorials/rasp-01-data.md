@@ -3,7 +3,7 @@
 ## Data Download
 To evaluate and train our structure prediction tools we need annotated secondary structures (the more the better).
 In this tutorial we are going to use the popular [_bpRNA-1m_ dataset](https://bprna.cgrb.oregonstate.edu/index.html) which contains over 100,000 known secondary structures.
-Download the _BPSeq_ files provided on the _bpRNA-1m_ website and unzip the downloaded files.
+Download the _BPSeq_ files provided on the _bpRNA-1m_ website and unzip the downloaded files. Make sure you don't download the _bpRNA-1m(90)_ dataset which is a bit different from the _bpRNA-1m_.
 
 ## BPSeq File Format (_.bpseq_)
 Let's check what's inside of the _BPSeq_ files we just downloaded. Open one of the files in the preferred text editors.
