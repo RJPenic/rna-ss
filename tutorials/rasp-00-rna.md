@@ -2,7 +2,7 @@
 
 ## Ribonucleic Acid (RNA)
 RNA, or ribonucleic acid, is a molecule found in all living cells. It plays a crucial role in the transmission of genetic information and the synthesis of proteins.
-RNA is similar to DNA (deoxyribonucleic acid) but has some structural and functional differences. RNA is composed of smaller subunits called nucleotides.
+RNA is similar to DNA (deoxyribonucleic acid) but has some structural and functional differences. RNA is composed of smaller subunits called nucleotides (same as DNA).
 Each nucleotide consists of three components: sugar, phosphate group and nitrogenous base. There are four types of nitrogenous bases in RNA: adenine (A), cytosine (C), guanine (G), and uracil (U).
 
 ## RNA Folding
