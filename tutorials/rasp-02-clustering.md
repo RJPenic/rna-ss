@@ -23,12 +23,12 @@ GGGGCCUCACCCCCGUUUGUGGG
 **TASK**: Implement a Python method that will find all BPSeq files in the given directory, load their RNA sequences and then save them to the specified FASTA file (usage example: `save_to_fasta(input_dir="./bpseqs_dir", fasta_file="./bpseqs.fasta")`). Use your method to save all RNA sequences from the _bpRNA-1m_ dataset into a single FASTA file.
 
 ## MMSeqs2
-MMSeqs2 is one of the most popular sequence clustering tools and can be used to cluster both protein and RNA/DNA sequences.
+_MMSeqs2_ is one of the most popular sequence clustering tools and can be used to cluster both protein and RNA/DNA sequences.
 It offers many parameters where we can tune the "definition" of sequence similarity, but for now we'll focus on the two main options: '_--min-seq-id_' and '_-c_'.
 
 First of all, let's quickly explain how _MMSeqs2_ works. 
 
-When you use MMSeqs2, your command will usually look something like this:
+When you use _MMSeqs2_, your command will usually look something like this:
 ```
 mmseqs easy-cluster --min-seq-id <MINIMUM SEQUENCE IDENTITY> -c <MINIMUM COVERAGE> --threads <NUMBER OF THREADS> <INPUT FASTA> <OUTPUT FILES PREFIX> <TEMPORARY DIRECTORY>
 ```
