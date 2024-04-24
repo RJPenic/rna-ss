@@ -72,3 +72,4 @@ mmseqs easy-cluster --help
 ## Additional information:
 - https://en.wikipedia.org/wiki/FASTA_format
 - https://mmseqs.com/latest/userguide.pdf
+- https://sites.google.com/view/cd-hit
