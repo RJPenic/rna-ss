@@ -45,6 +45,12 @@ Secondary structure structural motifs:
  <img src="../imgs/ss_struct_motifs.png" width="700">
 </p>
 
+Pseudoknot example:
+<p align="center">
+ <img src="../imgs/pseudoknot_example.png" width="700">
+</p>
+
+
 ## Tertiary structure
 RNA tertiary structure refers to the three-dimensional arrangement and folding of an RNA molecule. It is the spatial arrangement of atoms, bases or structural motifs. 
 
