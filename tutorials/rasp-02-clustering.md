@@ -26,21 +26,34 @@ GGGGCCUCACCCCCGUUUGUGGG
 MMSeqs2 is one of the most popular sequence clustering tools and can be used to cluster both protein and RNA/DNA sequences.
 It offers many parameters where we can tune the "definition" of sequence similarity, but for now we'll focus on the two main options: '_--min-seq-id_' and '_-c_'.
 
-
-
 When you use MMSeqs2, your command will usually look something like this:
 ```
-mmseqs easy-cluster --min-seq-id <MINIMUM SEQUENCE IDENTITY> -c <COVERAGE> --threads <NUMBER_OF_THREADS> <INPUT FASTA> <CLUSTERED> <TMP DIRECTORY PATH>
+mmseqs easy-cluster --min-seq-id <MINIMUM SEQUENCE IDENTITY> -c <COVERAGE> --threads <NUMBER OF THREADS> <INPUT FASTA> <OUTPUT FILES PREFIX> <TEMPORARY DIRECTORY>
 ```
 
-Options:
-
-- `--min-seq-id`
+We used three options:
+- MINIMUM SEQUENCE IDENTITY
   - Here we define how . If we put this value to 1.0, we want our sequences to
-- `-c`
-  - With this option we prevent  
-- `--threads`
+- COVERAGE
+  - With this option we prevent 
+- NUMBER OF THREADS
   - Define number of threads that will be used during the clustering. More threads usually means faster clustering (but be aware of the number of CPUs you have on your server).
+
+Alongside the options, we also defined three files/directories:
+- INPUT FASTA
+  - FASTA file with sequences we want to cluster.
+- OUTPUT FILES PREFIX
+  - Prefix of the files that _MMSeqs2_ will output.
+- TEMPORARY DIRECTORY
+  - Path to the directory where _MMSeqs2_ will save its temporary files during the clustering.
+
+Once the clustering is done, _MMSeqs2_ will output three files:
+- `<OUTPUT FILE PREFIX>_cluster.tsv`
+  - s 
+- `<OUTPUT FILE PREFIX>_rep_seq.fasta`
+  - s
+- `<OUTPUT FILE PREFIX>_all_seqs.fasta`
+  - d 
 
 Use `--help` option to learn about additional options:
 ```
