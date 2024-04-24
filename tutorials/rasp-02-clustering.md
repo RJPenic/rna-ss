@@ -41,7 +41,7 @@ We used three options:
   - The lower this value is, the more lenient we are when it comes to sequence length differences.
   - If you put this value to 0.0, even pairs of sequences with extremely different lengths can be clustered together.
 - `NUMBER OF THREADS`
-  - Define number of threads that will be used during the clustering. More threads usually means faster clustering (but be aware of the number of CPUs you have on your server).
+  - Define number of threads that will be used during the clustering. More threads usually means faster clustering (but be aware of the number of CPUs you have on your server and of other people that are using the same server).
 
 Alongside the options, we also defined three files/directories:
 - `INPUT FASTA`
