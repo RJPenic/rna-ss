@@ -3,7 +3,8 @@
 ## Data Download
 To evaluate and train our structure prediction tools we need annotated secondary structures (the more the better).
 In this tutorial we are going to use the popular [_bpRNA-1m_ dataset](https://bprna.cgrb.oregonstate.edu/index.html) which contains over 100,000 known secondary structures.
-Download the _BPSeq_ files provided on the _bpRNA-1m_ website and unzip the downloaded files. Make sure you don't download the _bpRNA-1m(90)_ dataset which is a bit different from the _bpRNA-1m_.
+
+**TASK**: Download the _BPSeq_ files provided on the _bpRNA-1m_ website and unzip the downloaded files. Make sure you don't download the _bpRNA-1m(90)_ dataset which is a bit different from the _bpRNA-1m_.
 
 ## BPSeq File Format (_.bpseq_)
 Let's check what's inside of the _BPSeq_ files we just downloaded. Open one of the files in the preferred text editors.
@@ -44,7 +45,7 @@ Another popular way to represent the secondary structure is dot bracket notation
   - Other "bracket"-type symbols can be used to represent basepairs, thereby allowing pseudo-knots to be encoded.
   - Example: `<(.>)` = First nucleotide is paired with the fourth one, second one is paired with the last one and third one is unpaired.
  
-Implement a python script which will convert given '_.bpseq_' file into '_.dbn_' format (usage example: `python convert.py input.bpseq output.dbn`).
+**TASK**: Implement a python script which will convert given '_.bpseq_' file into '_.dbn_' format (usage example: `python convert.py input.bpseq output.dbn`).
 
 Dot Bracket file example:
 ```
@@ -59,17 +60,18 @@ Previously described file format can come in handy when we want to save secondar
 conda install bioconda::rnastructure
 ```
 
-Choose one of the _BPSeq_ files we initially downloaded, convert it into the dot-bracket file and create a '_.svg_' file with secondary structure visualization using the _draw_ tool. Open the generated '_.svg_' file in one of the image viewer programs and check how the structure looks like.
+Example of a tRNA secondary structure:
+<p align="center">
+ <img src="../imgs/trna_visualized.png" width="500">
+</p>
+
+
+**TASK**: Choose one of the _BPSeq_ files we initially downloaded, convert it into the dot-bracket file and create a '_.svg_' file with secondary structure visualization using the _draw_ tool. Open the generated '_.svg_' file in one of the image viewer programs and check how the structure looks like.
 
 If you are unsure how to use _RNAStructure_'s _draw_, use the _--help_ option:
 ```
 draw --help
 ```
-
-Example of a tRNA secondary structure:
-<p align="center">
- <img src="../imgs/trna_visualized.png" width="500">
-</p>
 
 ## Exploratory Data Analysis
 Finally, let's see what's exactly in the dataset we downloaded. Create a Jupyter notebook and implement a simple _Python_ method for _BPSeq_ file parsing.
