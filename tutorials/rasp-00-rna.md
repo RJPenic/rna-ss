@@ -48,5 +48,5 @@ RNA tertiary structure is crucial for its biological function and can significan
 Determining RNA tertiary structure is a complex task that often relies on experimental techniques such as X-ray crystallography, nuclear magnetic resonance (NMR) spectroscopy, cryo-electron microscopy, and computational modeling methods. Understanding RNA tertiary structure is crucial for unraveling the mechanisms underlying RNA function, design of RNA-based therapies, and the development of new drugs targeting RNA molecules.
 
 <p align="center">
- <img src="../imgs/rna_struct_repr.png" width="700">
+ <img src="../imgs/struct_repr.png" width="700">
 </p>
