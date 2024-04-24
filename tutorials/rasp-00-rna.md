@@ -5,6 +5,11 @@ RNA, or ribonucleic acid, is a molecule found in all living cells. It plays a cr
 RNA is similar to DNA (deoxyribonucleic acid) but has some structural and functional differences. RNA is composed of smaller subunits called nucleotides (same as DNA).
 Each nucleotide consists of three components: sugar, phosphate group and nitrogenous base. There are four types of nitrogenous bases in RNA: adenine (A), cytosine (C), guanine (G), and uracil (U).
 
+RNA atom arrangement (blue=nucleic base, green=phosphate group, red=sugar ring):
+<p align="center">
+ <img src="../imgs/nucleotide_atoms.jpg" width="700">
+</p>
+
 ## RNA Folding
 RNA folding refers to the process by which a linear RNA molecule adopts a specific three-dimensional conformation or structure. During RNA folding, the molecule undergoes a series of conformational changes, driven by various interactions, to achieve its stable and functional folded state. The folded structure of RNA is crucial for its biological function, as it determines its interactions with other molecules and its ability to carry out specific cellular processes.
 
