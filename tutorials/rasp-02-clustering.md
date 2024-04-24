@@ -34,19 +34,19 @@ mmseqs easy-cluster --min-seq-id <MINIMUM SEQUENCE IDENTITY> -c <MINIMUM COVERAG
 ```
 
 We used three options:
-- MINIMUM SEQUENCE IDENTITY
+- `MINIMUM SEQUENCE IDENTITY`
   - If number of identical aligned residues divided by the number of aligned columns including internal gap columns exceeds this value, we consider two 
-- MINIMUM COVERAGE
+- `MINIMUM COVERAGE`
   - With this option we prevent 
-- NUMBER OF THREADS
+- `NUMBER OF THREADS`
   - Define number of threads that will be used during the clustering. More threads usually means faster clustering (but be aware of the number of CPUs you have on your server).
 
 Alongside the options, we also defined three files/directories:
-- INPUT FASTA
+- `INPUT FASTA`
   - FASTA file with sequences we want to cluster.
-- OUTPUT FILES PREFIX
+- `OUTPUT FILES PREFIX`
   - Prefix of the files that _MMSeqs2_ will output.
-- TEMPORARY DIRECTORY
+- `TEMPORARY DIRECTORY`
   - Path to the directory where _MMSeqs2_ will save its temporary files during the clustering.
 
 Once the clustering is done, _MMSeqs2_ will output three files:
