@@ -15,7 +15,7 @@ RNA folding refers to the process by which a linear RNA molecule adopts a specif
 ## Primary Structure (RNA Sequence)
 The primary structure of RNA refers to its linear sequence of nucleotides.
 
-Example of a RNA sequence:
+Example of an RNA sequence:
 ```
 ACUUGCCACCGCUUCCUAAC
 ```
