@@ -67,7 +67,7 @@ Use `--help` option to learn about additional options:
 mmseqs easy-cluster --help
 ```
 
-**TASK**: Collect RNA sequences from the _bpRNA-1m_ dataset and cluster them with _MMSeqs2_ (use `--min_seq_id 0.9` and `-c 0.8`). Check the output files. How many clusters are there? What's the distribution of cluster sizes (number of sequences in the cluster)?
+**TASK**: Collect RNA sequences from the _bpRNA-1m_ dataset and cluster them with _MMSeqs2_ (use `--min_seq_id 0.9` and `-c 0.8`). Check the output files. How many clusters are there? What's the distribution of cluster sizes (number of sequences in the cluster)? What happened with duplicate sequences? Did they end up in the same cluster?
 
 ## Additional information:
 - https://en.wikipedia.org/wiki/FASTA_format
