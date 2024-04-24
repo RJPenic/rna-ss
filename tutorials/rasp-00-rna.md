@@ -62,3 +62,9 @@ Determining RNA tertiary structure is a complex task that often relies on experi
 <p align="center">
  <img src="../imgs/struct_repr.png" width="700">
 </p>
+
+## Additional Information
+- https://www.pnas.org/doi/pdf/10.1073/pnas.2112677119
+- https://academic.oup.com/nar/article/51/18/9522/7272628
+- https://en.wikipedia.org/wiki/Nucleic_acid_secondary_structure
+- https://en.wikipedia.org/wiki/Pseudoknot
