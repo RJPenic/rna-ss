@@ -35,9 +35,11 @@ mmseqs easy-cluster --min-seq-id <MINIMUM SEQUENCE IDENTITY> -c <MINIMUM COVERAG
 
 We used three options:
 - `MINIMUM SEQUENCE IDENTITY`
-  - If number of identical aligned residues divided by the number of aligned columns including internal gap columns exceeds this value, we consider two 
+  - The higher this value is, the stricter your similarity definition is.
+  - If you put this value to 1.0, only sequences that can be perfectly aligned to each other will be considered similar (e.g. ACUG and ACUGUG) 
 - `MINIMUM COVERAGE`
-  - With this option we prevent 
+  - The lower this value is, the more lenient we are when it comes to sequence length differences.
+  - If you put this value to 0.0, even pairs of sequences with extremely different lengths can be clustered together.
 - `NUMBER OF THREADS`
   - Define number of threads that will be used during the clustering. More threads usually means faster clustering (but be aware of the number of CPUs you have on your server).
 
