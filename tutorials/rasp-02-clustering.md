@@ -48,3 +48,7 @@ mmseqs easy-cluster --help
 ```
 
 **TASK**: Collect RNA sequences from the _bpRNA-1m_ dataset and cluster them with _MMSeqs2_ (use `--min_seq_id 0.9` and `-c 0.8`). How many clusters are there? What's the distribution of cluster sizes (number of sequences in the cluster)?
+
+## Additional information:
+- https://en.wikipedia.org/wiki/FASTA_format
+- https://mmseqs.com/latest/userguide.pdf
