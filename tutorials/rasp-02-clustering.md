@@ -3,7 +3,7 @@
 When we train and evaluate prediction models, it is important to prevent potential data leaks between training and evaluation datasets.
 An example of a data leak is when the same (or similar) data sample appears in both training and test datasets.
 When it comes to RNAs and its structures, we prevent such cases by utilizing sequence clustering where we cluster similar RNA sequences together.
-Clustering information is then used during the data split, where we make sure that sequences from the same cluster don't end up in different datasets.
+Clustering information is then used during the data split, where we make sure that sequences from the same cluster do not end up in different data splits.
 
 ## FASTA File Format
 FASTA format is a text-based format representing biological sequences.
