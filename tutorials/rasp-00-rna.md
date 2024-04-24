@@ -41,6 +41,7 @@ Secondary structure structural motifs:
 - **Junctions** are branching points where multiple helices meet, forming a three-dimensional network of interactions.
 - **Pseudoknots** are structural motifs in which a single-stranded region of RNA pairs with a region outside its immediate vicinity, leading to the formation of intricate secondary structures.
 
+Visualization of various structural motifs:
 <p align="center">
  <img src="../imgs/ss_struct_motifs.png" width="700">
 </p>
