@@ -1,4 +1,4 @@
-# RNA Structure Prediction (RASP) - 01 - Data
+# RNA Structure Prediction (RASP) - 01 - Secondary Structure Dataset
 
 ## Data Download
 To evaluate and train our structure prediction tools we need annotated secondary structures (the more the better).
