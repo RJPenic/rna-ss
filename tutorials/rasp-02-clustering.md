@@ -26,15 +26,17 @@ GGGGCCUCACCCCCGUUUGUGGG
 MMSeqs2 is one of the most popular sequence clustering tools and can be used to cluster both protein and RNA/DNA sequences.
 It offers many parameters where we can tune the "definition" of sequence similarity, but for now we'll focus on the two main options: '_--min-seq-id_' and '_-c_'.
 
+First of all, let's quickly explain how _MMSeqs2_ works. 
+
 When you use MMSeqs2, your command will usually look something like this:
 ```
-mmseqs easy-cluster --min-seq-id <MINIMUM SEQUENCE IDENTITY> -c <COVERAGE> --threads <NUMBER OF THREADS> <INPUT FASTA> <OUTPUT FILES PREFIX> <TEMPORARY DIRECTORY>
+mmseqs easy-cluster --min-seq-id <MINIMUM SEQUENCE IDENTITY> -c <MINIMUM COVERAGE> --threads <NUMBER OF THREADS> <INPUT FASTA> <OUTPUT FILES PREFIX> <TEMPORARY DIRECTORY>
 ```
 
 We used three options:
 - MINIMUM SEQUENCE IDENTITY
-  - Here we define how . If we put this value to 1.0, we want our sequences to
-- COVERAGE
+  - If number of identical aligned residues divided by the number of aligned columns including internal gap columns exceeds this value, we consider two 
+- MINIMUM COVERAGE
   - With this option we prevent 
 - NUMBER OF THREADS
   - Define number of threads that will be used during the clustering. More threads usually means faster clustering (but be aware of the number of CPUs you have on your server).
@@ -49,18 +51,21 @@ Alongside the options, we also defined three files/directories:
 
 Once the clustering is done, _MMSeqs2_ will output three files:
 - `<OUTPUT FILE PREFIX>_cluster.tsv`
-  - s 
+  - Tab-separated file describing resulting clusters.
+  - Consists of two columns where the first column represents cluster ID and the second one represents ID of the sequence in the cluster.
 - `<OUTPUT FILE PREFIX>_rep_seq.fasta`
-  - s
+  - Ordinary FASTA file containing sequences from the input FASTA file that are also cluster representatives.
+  - Number of sequences in this file is equal to the number of clusters.
+  - This file is usually taken when we want a non-redundant version of the input dataset.
 - `<OUTPUT FILE PREFIX>_all_seqs.fasta`
-  - d 
+  - File that contains clustering information in a FASTA-like format.
 
 Use `--help` option to learn about additional options:
 ```
 mmseqs easy-cluster --help
 ```
 
-**TASK**: Collect RNA sequences from the _bpRNA-1m_ dataset and cluster them with _MMSeqs2_ (use `--min_seq_id 0.9` and `-c 0.8`). How many clusters are there? What's the distribution of cluster sizes (number of sequences in the cluster)?
+**TASK**: Collect RNA sequences from the _bpRNA-1m_ dataset and cluster them with _MMSeqs2_ (use `--min_seq_id 0.9` and `-c 0.8`). Check the output files. How many clusters are there? What's the distribution of cluster sizes (number of sequences in the cluster)?
 
 ## Additional information:
 - https://en.wikipedia.org/wiki/FASTA_format
