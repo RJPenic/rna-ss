@@ -13,7 +13,7 @@ _BPSeq_ format is one of the most popular ways to "encode" the secondary structu
 The structural information in the _BPSeq_ format is denoted in three columns:
 - The first column contains the sequence position, starting at one.
 - The second column contains the base in one-letter notation.
-- The third column contains the pairing partner of the base if the base is paired. If the base is unpaired, the third column is zero.
+- The third column contains the sequence index/position of the pairing partner of the base if the base is paired. If the base is unpaired, the third column is zero.
 
 Additionally, _BPSeq_ files often contain comments prefixed with the '_#_' symbol. These are usually present at the beginning of the file and can be ignored.
 
