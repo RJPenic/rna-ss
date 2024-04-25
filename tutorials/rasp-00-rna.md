@@ -46,7 +46,7 @@ Visualization of various structural motifs:
  <img src="../imgs/ss_struct_motifs.png" width="700">
 </p>
 
-Pseudoknot example:
+Pseudoknot example (notice that usually unpaired nucleotides from the hairpin loop paired up with nucleotides "outside" of the hairpin loop):
 <p align="center">
  <img src="../imgs/pseudoknot_example.png" width="700">
 </p>
