@@ -14,7 +14,7 @@ You will also have to assign a label to each RNA (1 if its structure contains ps
 ## Sequence featurization
 Another thing we have to define is how are we going to featurize the RNA sequence. Raw RNA sequence tokens mean nothing to the model so we need to find a way to present them in a numerical form.
 
-Simplest way to do this is to utilize [one-hot encoding](https://en.wikipedia.org/wiki/One-hot). We are going one-hot encode each nucleotide into a vector of 5 elements.
+Simplest way to do this is to utilize [one-hot encoding](https://en.wikipedia.org/wiki/One-hot). We are going one-hot encode each nucleotide into a vector of 5 elements (4 for standard nucleic bases and 1 for all other symbols) and then concatenate these nucleotide representations into a longer vector which will serve as sequence vector representation which will be fed into the model.
 
 Let's show how the described featurization works on a simple example:
 ```
@@ -33,7 +33,7 @@ Concatenation:
 ACUUNG = [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0]
 ```
 
-TODO: padding
+You will probably also have to deal with padding since we are working with sequences of varying lengths. To solve this, simply concatenate zeros to the sequence representation vector so it matches the length of representation of the longest sequence in the dataset.
 
 ## Model and training
 Once we have our dataset and a way to featurize the sequences, we can start training the models. Try training following models:
