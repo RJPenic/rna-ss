@@ -18,7 +18,7 @@ The structural information in the _CT_ format is denoted in six columns:
 - The fifth column contains the sequence index/position of the pairing partner of the base if the base is paired. If the base is unpaired, this column is zero.
 - The sixth column contains natural numbering (usually the same value as in the first column).
 
-First row in the CT file usually contains a short structure description (RNA family, sequence length, etc.).
+First row in the file usually contains a short structure description (RNA family, sequence length, etc.).
 
 CT file example:
 ```
@@ -49,7 +49,7 @@ Another popular way to represent the secondary structure is dot bracket notation
   - Other "bracket"-type symbols can be used to represent basepairs, thereby allowing pseudo-knots to be encoded.
   - Example: `<(.>)` = First nucleotide is paired with the fourth one, second one is paired with the last one and third one is unpaired.
  
-**TASK**: Implement a python script which will convert given '_.ct_' file into '_.dbn_' format (usage example: `python convert.py input.bpseq output.dbn`).
+**TASK**: Implement a python script which will convert given '_.ct_' file into '_.dbn_' format (usage example: `python convert.py input.ct output.dbn`).
 
 Dot Bracket file example:
 ```
@@ -70,7 +70,7 @@ Example of a tRNA secondary structure:
 </p>
 
 
-**TASK**: Choose one of the secondary structures from the _ArchiveII_ dataset, convert it into the dot-bracket file and create a '_.svg_' file with secondary structure visualization using the _draw_ tool. Open the generated '_.svg_' file in one of the image viewer programs and check how the structure looks like.
+**TASK**: Choose one of the secondary structures from the _ArchiveII_ dataset, convert it into the dot-bracket file and create a '_.svg_' file with secondary structure visualization using the _draw_ tool (make sure to use the _.dbn_ file as the input). Open the generated '_.svg_' file in one of the image viewer programs and check how the structure looks like.
 
 If you are unsure how to use _RNAStructure_'s _draw_, use the _--help_ option:
 ```
