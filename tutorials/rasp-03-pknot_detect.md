@@ -44,8 +44,15 @@ Once we have our dataset and a way to featurize the sequences, we can start trai
 Make sure to tune model hyperparameters on the validation set (use grid-search to find optimal hyperparameters). Don't forget to save the best performing models.
 
 ## Evaluation
-TODO
+Finally, the only thing remaining is to evaluate the trained model on the test dataset. Calculate (or visualize) following metrics:
+- Accuracy
+- Precision
+- Recall
+- F1
+- Confusion matrix
+- ROC curve (AUC)
 
 ## Additional information
 - https://www.geeksforgeeks.org/ml-one-hot-encoding/
 - https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/
+- https://neptune.ai/blog/evaluation-metrics-binary-classification
