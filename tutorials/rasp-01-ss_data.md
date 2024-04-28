@@ -91,6 +91,7 @@ Once you can parse secondary structure files, answer the following questions abo
   - Which nucleic bases pair up most often/rarely?
 - What is the average percentage of unpaired nucleotides per RNA?
 - Are there any structures without any pairings?
+- How many structures have pseudoknots?
 
 Feel free to explore other aspects of the dataset that are not mentioned here and we highly recommend you provide informative charts (e.g. bar chart, box plot, ...) whenever possible.
 
