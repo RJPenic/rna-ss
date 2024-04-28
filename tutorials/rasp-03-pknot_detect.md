@@ -52,6 +52,8 @@ Finally, the only thing remaining is to evaluate the trained model on the test d
 - Confusion matrix
 - ROC curve (AUC)
 
+If you think of any additional metrics / visualizations that might prove interesting, feel free to provide them as well.
+
 ## Additional information
 - https://www.geeksforgeeks.org/ml-one-hot-encoding/
 - https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/
