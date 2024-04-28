@@ -12,7 +12,40 @@ Before we start dealing with anything else, we need to split our dataset into tr
 You will also have to assign a label to each RNA (1 if its structure contains pseudoknot and 0 if it doesn't). Save the sequences with their labels into a CSV file (make a separate CSV file for each dataset).
 
 ## Sequence featurization
+Another thing we have to define is how are we going to featurize the RNA sequence. Raw RNA sequence tokens mean nothing to the model so we need to find a way to present them in a numerical form.
+
+Simplest way to do this is to utilize [one-hot encoding](https://en.wikipedia.org/wiki/One-hot). We are going one-hot encode each nucleotide into a vector of 5 elements.
+
+Let's show how the described featurization works on a simple example:
+```
+One-hot encoding: [ADENINE, CYTOSINE, URACIL, GUANINE, ANYTHING ELSE]
+Original sequence: AGUUNC
+----------
+One-hot encoding:
+A = [1, 0, 0, 0, 0]
+G = [0, 0, 0, 1, 0]
+U = [0, 0, 1, 0, 0]
+U = [0, 0, 1, 0, 0]
+N = [0, 0, 0, 0, 1]
+C = [0, 1, 0, 0, 0]
+----------
+Concatenation:
+ACUUNG = [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0]
+```
+
+TODO: padding
 
 ## Model and training
+Once we have our dataset and a way to featurize the sequences, we can start training the models. Try training following models:
+- [Logistic regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+- [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+- [XGBoost](https://xgboost.readthedocs.io/en/stable/)
 
-## Results
+Make sure to tune model hyperparameters on the validation set (use grid-search to find optimal hyperparameters). Don't forget to save the best performing models.
+
+## Evaluation
+TODO
+
+## Additional information
+- https://www.geeksforgeeks.org/ml-one-hot-encoding/
+- https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/
