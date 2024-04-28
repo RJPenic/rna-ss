@@ -46,7 +46,7 @@ Another popular way to represent the secondary structure is dot bracket notation
   - Each character represents a nucleotide. 
   - The dot/period "." represents an unpaired nucleotide.
   - Pairings are denoted by matching pairs of parenthesis.
-  - Other "bracket"-type symbols can be used to represent basepairs, thereby allowing pseudo-knots to be encoded.
+  - Other "bracket"-type symbols can be used to represent basepairs, thereby allowing pseudoknots to be encoded.
   - Example: `<(.>)` = First nucleotide is paired with the fourth one, second one is paired with the last one and third one is unpaired.
  
 **TASK**: Implement a python script which will convert given '_.ct_' file into '_.dbn_' format (usage example: `python convert.py input.ct output.dbn`).
