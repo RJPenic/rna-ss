@@ -7,7 +7,7 @@ Before we try predicting the structure itself, let's try doing something a bit s
 </p>
 
 ## Training and evaluation data
-Before we start dealing with anything else, we need to split our dataset into training, validation and test sets. Use _ArchiveII_ dataset as the starting point, remove sequence duplicates, cluster its sequences with _MMSeqs2_ and split the dataset into three parts accordingly.
+Before we start dealing with anything else, we need to split our dataset into training, validation and test sets. Use _ArchiveII_ dataset as the starting point, remove sequence duplicates, cluster its sequences with _MMSeqs2_ and split the dataset into three parts accordingly (Reminder: RNAs from the same cluster should be in the same data split).
 
 You will also have to assign a label to each RNA (1 if its structure contains pseudoknot and 0 if it doesn't). Save the sequences with their labels into a CSV file (make a separate CSV for each dataset).
 
