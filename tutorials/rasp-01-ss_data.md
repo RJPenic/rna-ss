@@ -49,11 +49,11 @@ Another popular way to represent the secondary structure is dot bracket notation
   - Other "bracket"-type symbols can be used to represent basepairs, thereby allowing pseudoknots to be encoded.
   - Example: `<(.>)` = First nucleotide is paired with the fourth one, second one is paired with the last one and third one is unpaired.
  
-**TASK**: Implement a python script which will convert given '_.ct_' file into '_.dbn_' format (usage example: `python convert.py input.ct output.dbn`).
+**TASK**: Implement a python script which will convert given '_.ct_' file into '_.dbn_' format (usage example: `python convert.py input.ct output.dbn`). To verify that your implementation is working correctly, check for one of the structures (preferably one with a pseudoknot) to see if it gives the same output as [this web application](https://rna.urmc.rochester.edu/RNAstructureWeb/Servers/ct2dot/ct2dot.html).
 
 Dot Bracket file example:
 ```
->A pseudo-knot structure
+>A pseudoknot structure
 GAUGGCACUCCCAUCAAUUGGAGC
 (((((..<<<))))).....>>>.
 ```
