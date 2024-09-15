@@ -14,10 +14,13 @@ Implement the described model.
 </p>
 
 ## Data
-For model training and evaluation we are going to use the ArchiveII dataset. Split the dataset in the training, validation and test sets and meanwhile make sure similar sequences remain in the same split.
+For model training and evaluation we are going to use the ArchiveII dataset. Split the dataset in the training, validation and test sets and make sure similar sequences remain in the same split.
 
-Implement a Pytorch _Dataset_ class which will handle secondary structure loading and which will provide 
-TODO
+Implement a method which will parse the given '_.ct_' file and return sequence of the RNA and the 2D representation of its secondary structure. Incorporate the implemented method in the data loading pipeline (e.g. _Dataset_ class if you are using _Pytorch_).
+
+<p align="center">
+ <img src="../imgs/ss_py_dataset.png" width="500">
+</p>
 
 ## Base Pairing Probabilities (BPP) Postprocessing
 When it comes to classification, deep learning models output classification probabilities: "What's the probability of the input sample belonging to the class?". In our case, model will output base pairing probability (BPP) for each possible nucleotide pair in the RNA. Since we are doing secondary structure prediction, we need a way to convert BPP matrix into a proper secondary structure.
