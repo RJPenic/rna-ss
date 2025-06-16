@@ -15,7 +15,6 @@ Implement the described model. To help you, we prepared the code skeleton in the
 
 For the outer concatenation, the goal is to construct a tensor of shape L × L × 2E, where each entry corresponds to a pairwise concatenation of embeddings — one from position i and one from position j. Here's what happens step-by-step:
 
-Step-by-step Explanation:
 1. Input:
 You start with a tensor X of shape L × E.
 
