@@ -7,11 +7,35 @@ This problem definition will be reflected in the architecture of our model. We w
 
 More precisely, we will first convert sequence nucleotides into vector representations, apply outer concatenation on these representation to obtain pair representations which will then be forwarded to a convolutional network. More details about the model's architecture can be found on the image below.
 
-Implement the described model.
+Implement the described model. To help you, we prepared the code skeleton in the rasp-04-code-skeleton directory. Fill out the missing parts of the code.
 
 <p align="center">
  <img src="../imgs/ss_pred_model.png" width="800">
 </p>
+
+For the outer concatenation, the goal is to construct a tensor of shape L × L × 2E, where each entry corresponds to a pairwise concatenation of embeddings — one from position i and one from position j. Here's what happens step-by-step:
+
+Step-by-step Explanation:
+1. Input:
+You start with a tensor X of shape L × E.
+
+2. Expand X in two ways:
+    -   Expand X to shape L × 1 × E — let's call this X1.
+
+    - Expand X to shape 1 × L × E — call this X2.
+
+This makes broadcasting possible for pairwise combinations.
+
+3. Broadcast and concatenate:
+-   Now, broadcast X1 and X2 to L × L × E each.
+
+-   Concatenate along the last dimension:
+    concat(X1, X2) → shape L × L × 2E
+
+This gives a matrix where each [i, j] element is the concatenation of the embedding of position i and the embedding of position j:
+[X[i], X[j]] ∈ ℝ^{2E}.
+
+This outer concatenation allows a model to consider pairwise relationships between all elements in a sequence.
 
 ## Data
 For model training and evaluation we are going to use the ArchiveII dataset. Split the dataset in the training, validation and test sets and make sure similar sequences remain in the same split.
