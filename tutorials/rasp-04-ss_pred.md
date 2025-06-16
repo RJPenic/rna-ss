@@ -7,7 +7,7 @@ This problem definition will be reflected in the architecture of our model. We w
 
 More precisely, we will first convert sequence nucleotides into vector representations, apply outer concatenation on these representation to obtain pair representations which will then be forwarded to a convolutional network. More details about the model's architecture can be found on the image below.
 
-Implement the described model. To help you, we prepared the code skeleton in the rasp-04-code-skeleton directory. Fill out the missing parts of the code.
+Implement the described model. To help you, we prepared the code skeleton in the [rasp-04-code-skeleton](https://github.com/RJPenic/rna-ss/tree/main/tutorials/rasp-04-code-skeleton) directory. Fill out the missing parts of the code.
 
 <p align="center">
  <img src="../imgs/ss_pred_model.png" width="800">
