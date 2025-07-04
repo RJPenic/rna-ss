@@ -50,6 +50,8 @@ When it comes to classification, deep learning models output classification prob
 
 Implement a simple greedy approach where you will iteratively set nucleotide pairs with the highest pairing probability as paired and then exclude all possible clashing pairs from being set as paired in future iterations of the algorithm. During this procedure, ignore non-canonical nucleotide pairings and pairings that would cause a ”sharp” hairpin loop (_i_-th nucleotide cannot be paired with the _j_-th nucleotide if |_i_ − _j_| < 4).
 
+To make sure some nucleotides remain unpaired, use 0.5 probability as the pairing threshold.
+
 ## Training and evaluation
 Training secondary structure prediction model should not differ much from the usual classification problem so you should be able to use a binary cross entropy loss during training. Train the model and evaluate it using precision, recall and F1 score metrics. Calculate each metric for each structure separately and then take the average values to prevent longer RNAs from influencing the metrics too much. Try out different model configurations (modify number of layers, embedding dimensionality, kernel size, etc.) to figure out what performs the best. For batch size, feel free to use a size of 1 to avoid potential padding implementation.
 
