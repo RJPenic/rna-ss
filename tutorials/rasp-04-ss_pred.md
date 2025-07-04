@@ -61,5 +61,7 @@ RNA families are groups of RNA molecules that share similar structural, function
 Conveniently, ArchiveII dataset has annotated family of each structure in the name of the corresponding file (e.g. '_5s_Achromobacter-xylosoxidans-1.ct_' belongs to the 5S family). Check how many different RNA families there are in the ArchiveII dataset and resplit it in a way so you keep structures of one family for validation, structures of another one for testing and all other remaining structures for training. Train and evaluate the model with the new data split and compare the new results to old ones.
 
 ## Additional information
+- https://academic.oup.com/nar/article/50/3/e14/6430845
+- https://www.nature.com/articles/s41467-021-21194-4
 - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7202366/
 - https://academic.oup.com/bioinformatics/article/38/16/3892/6617348
