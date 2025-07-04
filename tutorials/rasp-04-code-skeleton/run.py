@@ -125,6 +125,9 @@ def main(args):
         raise ValueError("Unrecognized command!")
 
 
+# How to run training/testing?
+# For training: 'python run.py fit ../data_dir <OTHER ARGS>'
+# For testing: 'python run.py test ../data_dir <OTHER ARGS>'
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="RNA secondary structure prediction"
