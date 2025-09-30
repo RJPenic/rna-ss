@@ -22,13 +22,13 @@ GGGGCCUCACCCCCGUUUGUGGG
 
 **TASK**: Implement a Python method that will find all CT files in the given directory, load their RNA sequences and then save them to the specified FASTA file (usage example: `save_to_fasta(input_dir="./cts_dir", output_fasta_file="./data.fasta")`). Use your method to save all RNA sequences from the _ArchiveII_ dataset into a single FASTA file.
 
-## MMSeqs2
-_MMSeqs2_ is one of the most popular sequence clustering tools and can be used to cluster both protein and RNA/DNA sequences.
+## MMseqs2
+_MMseqs2_ is one of the most popular sequence clustering tools and can be used to cluster both protein and RNA/DNA sequences.
 It offers many parameters where we can tune the "definition" of sequence similarity, but for now we'll focus on the two main options: '_--min-seq-id_' and '_-c_'.
 
-First of all, let's quickly explain how _MMSeqs2_ works. 
+First of all, let's quickly explain how _MMseqs2_ works. 
 
-When you use _MMSeqs2_, your command will usually look something like this:
+When you use _MMseqs2_, your command will usually look something like this:
 ```
 mmseqs easy-cluster --min-seq-id <MINIMUM SEQUENCE IDENTITY> -c <MINIMUM COVERAGE> --threads <NUMBER OF THREADS> <INPUT FASTA> <OUTPUT FILES PREFIX> <TEMPORARY DIRECTORY>
 ```
@@ -47,11 +47,11 @@ Alongside the options, we also defined three files/directories:
 - `INPUT FASTA`
   - FASTA file with sequences we want to cluster.
 - `OUTPUT FILES PREFIX`
-  - Prefix of the files that _MMSeqs2_ will output.
+  - Prefix of the files that _MMseqs2_ will output.
 - `TEMPORARY DIRECTORY`
-  - Path to the directory where _MMSeqs2_ will save its temporary files during the clustering.
+  - Path to the directory where _MMseqs2_ will save its temporary files during the clustering.
 
-Once the clustering is done, _MMSeqs2_ will output three files:
+Once the clustering is done, _MMseqs2_ will output three files:
 - `<OUTPUT FILE PREFIX>_cluster.tsv`
   - Tab-separated file describing resulting clusters.
   - Consists of two columns where the first column represents cluster ID and the second one represents ID of the sequence in the cluster.
@@ -67,7 +67,7 @@ Use `--help` option to learn about additional options:
 mmseqs easy-cluster --help
 ```
 
-**TASK**: Collect RNA sequences from the _ArchiveII_ dataset and cluster them with _MMSeqs2_ (use `--min_seq_id 0.9` and `-c 0.8`). Check the output files. How many clusters are there? What's the distribution of cluster sizes (number of sequences in the cluster)? What happened with duplicate sequences? Did they end up in the same clusters? Try clustering again but this time with different clustering arguments. Try increasing/decreasing `--min_seq_id` and/or `-c`. What happens and why?
+**TASK**: Collect RNA sequences from the _ArchiveII_ dataset and cluster them with _MMseqs2_ (use `--min_seq_id 0.9` and `-c 0.8`). Check the output files. How many clusters are there? What's the distribution of cluster sizes (number of sequences in the cluster)? What happened with duplicate sequences? Did they end up in the same clusters? Try clustering again but this time with different clustering arguments. Try increasing/decreasing `--min_seq_id` and/or `-c`. What happens and why?
 
 ## Additional information:
 - https://en.wikipedia.org/wiki/FASTA_format
